@@ -1,0 +1,123 @@
+https://github.com/bincykb/setgit.git
+
+
+Microsoft Windows [Version 10.0.19042.631]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\GALAXY>cd desktop.
+
+C:\Users\GALAXY\Desktop>cd setgit
+
+C:\Users\GALAXY\Desktop\setgit>git config --global user.name "bincykb"
+
+C:\Users\GALAXY\Desktop\setgit>git config --global user.email "bincykb998@gmail.com"
+
+C:\Users\GALAXY\Desktop\setgit>git init
+Initialized empty Git repository in C:/Users/GALAXY/Desktop/setgit/.git/
+
+C:\Users\GALAXY\Desktop\setgit>git add .
+
+C:\Users\GALAXY\Desktop\setgit>git status
+
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SD Lab15(NOWRIN S4 MCA ROLL NO.22).docx
+        new file:   SDlab15 BINCY K BABU.pdf
+        new file:   abcd.pdf
+
+
+C:\Users\GALAXY\Desktop\setgit>git commit -m "all files added"
+[master (root-commit) eed5d46] all files added
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 SD Lab15(NOWRIN S4 MCA ROLL NO.22).docx
+ create mode 100644 SDlab15 BINCY K BABU.pdf
+ create mode 100644 abcd.pdf
+
+C:\Users\GALAXY\Desktop\setgit>git status
+On branch master
+nothing to commit, working tree clean
+
+
+C:\Users\GALAXY\Desktop\setgit>
+C:\Users\GALAXY\Desktop\setgit>git branch -M setgit
+
+C:\Users\GALAXY\Desktop\setgit>git remote add origin https://github.com/bincykb/setgit.git
+
+C:\Users\GALAXY\Desktop\setgit>git push -u origin setgit
+Select an authentication method for 'https://github.com/':
+  1. Web browser (default)
+  2. Personal access token
+option (enter for default): 1
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 130.19 KiB | 18.60 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bincykb/setgit.git
+ * [new branch]      setgit -> setgit
+Branch 'setgit' set up to track remote branch 'setgit' from 'origin'.
+
+C:\Users\GALAXY\Desktop\setgit>git pull origin setgit
+From https://github.com/bincykb/setgit
+ * branch            setgit     -> FETCH_HEAD
+Already up to date.
+
+C:\Users\GALAXY\Desktop\setgit>git pull origin setgit
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 613 bytes | 3.00 KiB/s, done.
+From https://github.com/bincykb/setgit
+ * branch            setgit     -> FETCH_HEAD
+   eed5d46..fad2e2a  setgit     -> origin/setgit
+Updating eed5d46..fad2e2a
+Fast-forward
+ efgh.pdf | Bin 0 -> 131886 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 efgh.pdf
+
+C:\Users\GALAXY\Desktop\setgit>git clone https://github.com/bincykb/setgit.git
+Cloning into 'setgit'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (6/6), done.
+Receiving objects: 100% (6/6), 130.75 KiB | 5.68 MiB/s, done.eceiving objects:  83% (5/6)
+
+Resolving deltas: 100% (1/1), done.
+
+C:\Users\GALAXY\Desktop\setgit>git log
+commit fad2e2a02603895c29bc1ca7fae3f57d0628790f (HEAD -> setgit, origin/setgit)
+Author: bincykb <86405271+bincykb@users.noreply.github.com>
+Date:   Thu Jun 24 14:43:30 2021 +0530
+
+    Add files via upload
+
+commit eed5d4677ca905659c485070c9eab44a97eacbaa
+Author: bincykb <bincykb998@gmail.com>
+Date:   Fri Jun 25 14:26:42 2021 +0530
+
+    all files added
+
+C:\Users\GALAXY\Desktop\setgit>git branch
+* setgit
+
+C:\Users\GALAXY\Desktop\setgit>git branch new
+
+C:\Users\GALAXY\Desktop\setgit>git branch
+  new
+* setgit
+
+C:\Users\GALAXY\Desktop\setgit>git checkout new
+Switched to branch 'new'
+
+C:\Users\GALAXY\Desktop\setgit>git branch
+* new
+  setgit
+
